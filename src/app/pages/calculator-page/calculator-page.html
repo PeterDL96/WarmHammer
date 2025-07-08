@@ -1,0 +1,20 @@
+<app-menu-bar></app-menu-bar>
+<p-fluid class="card flex flex-wrap gap-4">
+  <div class="flex-auto">
+    <app-numerical-input class="block mb-2" [id]='"attack_id"' [label]='"Attack"' [value]="weaponStats.attack"></app-numerical-input>
+  </div>
+  <div class="flex-auto">
+      <app-numerical-input class="block mb-2" [id]='"weapon_skill_id"' [label]='"Weapon Skill"' [value]="weaponStats.weaponSkill"></app-numerical-input>
+  </div>
+  <div class="flex-auto">
+      <app-numerical-input class="block mb-2" [id]='"strength_id"' [label]='"Strength"' [value]="weaponStats.strength"></app-numerical-input>
+  </div>
+  <div class="flex-auto">
+      <app-numerical-input class="block mb-2" [id]='"armor_penetration_id"' [label]='"Armor Penetration"' [value]="weaponStats.armorPenetration" [prefix]='"-"'></app-numerical-input>
+  </div>
+  <div class="flex-auto">
+      <app-numerical-input class="block mb-2" [id]='"damage_id"' [label]='"Damage"' [value]="weaponStats.damage"></app-numerical-input>
+  </div>
+</p-fluid>
+
+<app-button [label]="'Calculate!'">
