@@ -1,20 +1,23 @@
 <app-menu-bar></app-menu-bar>
-<p-fluid class="card flex flex-wrap gap-4">
-  <div class="flex-auto">
-    <app-numerical-input class="block mb-2" [id]='"attack_id"' [label]='"Attack"' [value]="weaponStats.attack"></app-numerical-input>
+<div class="card flex justify-center ">
+  <div class="flex-auto block-div items-end">
+    <app-numerical-input [id]='"model_id"' [label]='"Model"' [value]="unit.model[0]"></app-numerical-input>
   </div>
-  <div class="flex-auto">
-      <app-numerical-input class="block mb-2" [id]='"weapon_skill_id"' [label]='"Weapon Skill"' [value]="weaponStats.weaponSkill"></app-numerical-input>
+  <div class="flex-auto block-div items-end">
+    <app-numerical-input [id]='"attack_id"' [label]='"Attack"' [value]="unit.weaponStats.attack"></app-numerical-input>
   </div>
-  <div class="flex-auto">
-      <app-numerical-input class="block mb-2" [id]='"strength_id"' [label]='"Strength"' [value]="weaponStats.strength"></app-numerical-input>
+  <div class="flex-auto block-div">
+      <app-numerical-input [id]='"weapon_skill_id"' [label]='"Weapon Skill"' [value]="unit.weaponStats.weaponSkill"></app-numerical-input>
   </div>
-  <div class="flex-auto">
-      <app-numerical-input class="block mb-2" [id]='"armor_penetration_id"' [label]='"Armor Penetration"' [value]="weaponStats.armorPenetration" [prefix]='"-"'></app-numerical-input>
+  <div class="flex-auto block-div">
+      <app-numerical-input [id]='"strength_id"' [label]='"Strength"' [value]="unit.weaponStats.strength"></app-numerical-input>
   </div>
-  <div class="flex-auto">
-      <app-numerical-input class="block mb-2" [id]='"damage_id"' [label]='"Damage"' [value]="weaponStats.damage"></app-numerical-input>
+  <div class="flex-auto block-div">
+      <app-numerical-input [id]='"armor_penetration_id"' [label]='"Armor Penetration"' [value]="unit.weaponStats.armorPenetration" [prefix]='"-"'></app-numerical-input>
   </div>
-</p-fluid>
+  <div class="flex-auto block-div">
+      <app-numerical-input [id]='"damage_id"' [label]='"Damage"' [value]="unit.weaponStats.damage"></app-numerical-input>
+  </div>
+</div>
 
 <app-button [label]="'Calculate!'">
